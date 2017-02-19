@@ -23,6 +23,6 @@ import { RegisterPage } from '../pages/register/register';
     LoginPage,
     RegisterPage
   ],
-  providers: [AuthService]
+  providers: [AuthService,{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
 export class AppModule {}
